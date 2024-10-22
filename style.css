@@ -298,7 +298,7 @@ figure img {
         grid-row: 4 / 5;
         margin-top: 0;
         margin-bottom: 60px;
-        margin-left: 0;
+        padding-left: 0;
     }
 }
 

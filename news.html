@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paul Levine</title>
+        <link href="./resources/style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><h4>Paul Levine</h4></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main id="content">
+            <section id="all-news">
+                <h1>News</h1>
+                <ul>
+                    <li><b><u>02/10/2024</u>:</b> Sed at metus ac odio pellentesque sollicitudin ac viverra arcu.</li>
+                    <li><b><u>27/08/2024</u>:</b> Integer tempor sollicitudin urna, vitae lobortis augue faucibus vitae. Mauris feugiat, dui lacinia lobortis interdum, eros ante pulvinar ex, non.</li>
+                    <li><b><u>15/05/2024</u>:</b> Pellentesque imperdiet porta felis. Nulla volutpat nisl tellus, placerat molestie nunc ultricies in. Sed tristique.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Paul Levine - 2024</p>
+            <p>Created by Leilane Cambara</p>
+        </footer>
+    
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>

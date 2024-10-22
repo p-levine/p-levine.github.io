@@ -299,5 +299,9 @@ figure img {
         margin-top: 0;
         margin-bottom: 60px;
     }
+}
 
+@media only screen and (max-width: 500px) {
+    #logo {
+        display: none;
 }

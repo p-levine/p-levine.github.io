@@ -186,6 +186,7 @@ footer p {
 
 /* List Styles */
 #research ul, #news ul {
+    padding: 0;
     list-style: none;
 }
 

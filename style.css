@@ -1,0 +1,303 @@
+html {
+    font-family: 'Afacad Flux';
+    background-color: #1C2C5B;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 5fr 4fr 150px;
+    column-gap: 20px;
+    background-color: #fff;
+}
+
+header {
+    z-index: 10;
+    grid-column: 1 / span 12;
+    grid-row: 1 / 2;
+    background-color: #1C2C5B;
+    display: grid;
+    height: auto;
+    min-height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-width: 100px;
+}
+
+#logo h4 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    grid-column: 12 / 13;
+    grid-row: 1 / 2;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 100px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+main {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 2;
+    display: grid;
+}
+
+#hero {
+    grid-column: 1 / span 12;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #6cabdd;
+    justify-items: center;
+    align-items: center;
+}
+
+#intro {
+    grid-column: 2 / span 7;
+}
+
+figure {
+    grid-column: 10 / 12;
+    margin: 0;
+}
+
+#research {
+    grid-column: 2 / span 5;
+    grid-row: 3 / 4;
+    margin-top: 35px;
+    margin-bottom: 80px;
+    padding-right: 15px;
+}
+
+#news {
+    grid-column: 7 / span 5;
+    grid-row: 3 / 4;
+    padding-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+footer {
+    grid-column: 1 / span 12;
+    background-color: #1C2C5B;
+    grid-row: 4 / 5;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Links & Buttons */
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 14.5px 10px;
+    text-align: center;
+}
+
+nav a:hover, a:active {
+    background-color: #6cabdd;
+}
+
+a.paper-link {
+    color: #2D7DBE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover.paper-link {
+    color: #6cabdd;
+    text-decoration: underline;    
+}
+
+#research a.button, #news a.button {
+    text-decoration: none;
+    display: block;
+    background-color: #6cabdd;
+    width: 200px;
+    padding: 10px 0;
+    margin: 30px auto 0 auto;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#research a.button:hover, #news a.button:hover {
+    background-color: #1C2C5B;
+}
+
+
+/* Text Styles */
+#logo h4 {
+    color: #fff;
+    margin: 0;
+    padding: 16px 0 16px 25px;
+    display: block;
+    min-width: 100px;
+}
+
+#intro h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    margin-top: 150px;
+    color: #fff;
+}
+
+#intro p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    color: #fff;
+}
+
+#research h2, #news h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#content h1 {
+    margin-top: 40px;
+}
+
+/* List Styles */
+#research ul, #news ul {
+    list-style: none;
+}
+
+#research li, #news li {
+    margin-bottom: 10px;
+}
+
+/* Images */
+figure img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Research Page */
+#content h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#research-summary {
+    grid-column: 1 / 12;
+    margin: 0 10%;
+}
+
+#research-categories {
+    grid-column: 1 / 12;
+    margin: 10px 10% 80px 10%;
+}
+
+.collapsible {
+    cursor: pointer;
+    color: #1C2C5B;
+    margin: 9px 0;
+}
+
+.collapsible:before {
+    content: '+';
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+
+.active:before {
+    content: '-';
+}
+
+.papers {
+    display: none;
+    overflow: hidden;
+    background-color: #F1F3FB;
+    margin: 0 0 15 0;
+}
+
+.papers li {
+    margin-bottom: 10px;
+}
+
+#teaching-summary, #all-news {
+    grid-column: 1 / 12;
+    margin: 0 10% 150px 10%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1200px) {
+    #intro h1 {
+        font-size: 50px;
+    }
+    
+    #intro p {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+ #intro {
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
+    }
+    
+    #intro h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #intro p {
+        font-size: 18px;
+    }
+
+    figure {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+        width: 40%;
+        margin-top: 70px;
+    }
+
+    #research {
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
+        margin-bottom: 30px;
+    }
+
+    #news {
+        grid-column: 2 / 12;
+        grid-row: 4 / 5;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+}

@@ -240,6 +240,7 @@ figure img {
     overflow: hidden;
     background-color: #F1F3FB;
     margin: 0 0 15 0;
+    padding-right: 30px;
 }
 
 .papers li {

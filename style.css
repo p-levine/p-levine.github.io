@@ -115,13 +115,13 @@ nav a:hover, a:active {
     background-color: #6cabdd;
 }
 
-a.paper-link {
+a.paper-link, a {
     color: #2D7DBE;
     font-weight: bold;
     text-decoration: none;
 }
 
-a:hover.paper-link {
+a:hover.paper-link, a:hover {
     color: #6cabdd;
     text-decoration: underline;    
 }
@@ -307,4 +307,5 @@ figure img {
 @media only screen and (max-width: 500px) {
     #logo {
         display: none;
+    }
 }

@@ -113,6 +113,7 @@ nav a {
 
 nav a:hover, a:active {
     background-color: #6cabdd;
+    color: #fff;
 }
 
 a.paper-link, a {

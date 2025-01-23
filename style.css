@@ -78,13 +78,15 @@ figure {
 }
 
 #research {
-    grid-column: 2 / span 5;
+    /*grid-column: 2 / span 5;*/
+    grid-column: 2 / span 10;
     grid-row: 3 / 4;
     margin-top: 35px;
     margin-bottom: 80px;
     padding-right: 15px;
 }
 
+/*
 #news {
     grid-column: 7 / span 5;
     grid-row: 3 / 4;
@@ -92,6 +94,7 @@ figure {
     margin-top: 35px;
     margin-bottom: 100px;
 }
+*/
 
 footer {
     grid-column: 1 / span 12;
